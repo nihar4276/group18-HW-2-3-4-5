@@ -33,7 +33,7 @@ jobs:
         with:
           python-version: 3.8
       - name: install dependencies and run doc generator
-      - run: pip install -r requirements.txt && python -m pdoc ./src/* -o ./docs/
+        run: pip install -r requirements.txt && python -m pdoc ./src/* -o ./docs/
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
